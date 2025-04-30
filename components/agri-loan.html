@@ -1,0 +1,32 @@
+<div class="container">
+    <h1>వ్యవసాయ రుణ సహాయకుడు <span class="english">/ Agri Loan Helper</span></h1>
+    <div class="form">
+      <label>పంటను ఎంచుకోండి:</label>
+      <select id="crop">
+        <option value="Paddy">Paddy / బియ్యం</option>
+        <option value="Cotton">Cotton / పత్తి</option>
+        <option value="Chilli">Chilli / మిరప</option>
+      </select>
+      
+      <label>భూమి పరిమాణం (ఎకరాలు):</label>
+      <input type="number" id="area" />
+      
+      <label>ఎకరాకు ఖర్చు (₹):</label>
+      <input type="number" id="costPerAcre" />
+      
+      <label>ఉత్పత్తి అంచనా (క్వింటాల్స్):</label>
+      <input type="number" id="yield" />
+      
+      <label>క్వింటాల్‌కు మార్కెట్ ధర (₹):</label>
+      <input type="number" id="price" />
+      
+      <label>రుణ కాలం (నెలలు):</label>
+      <input type="number" id="duration" />
+      
+      <label>వడ్డీ రేటు (% సంవత్సరానికి):</label>
+      <input type="number" id="loanRate" value="10" />
+      
+      <button onclick="calculateLoan()">లెక్కించండి</button>
+    </div>
+    <div class="output" id="loanOutput"></div>
+  </div>

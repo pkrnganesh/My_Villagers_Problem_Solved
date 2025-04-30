@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agri Loan Helper / వ్యవసాయ రుణ సహాయకుడు</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="language-toggle-container">
+    <div class="language-toggle">
+      <span class="toggle-label">English</span>
+      <label class="switch">
+        <input type="checkbox" id="globalLangToggle" checked onchange="toggleGlobalLanguage()">
+        <span class="slider round"></span>
+      </label>
+      <span class="toggle-label">తెలుగు</span>
+    </div>
+  </div>
+  
+  <div class="main-wrapper">
+    <div class="sidebar">
+      <h2 id="dashboardLabel">డాష్‌బోర్డ్</h2>
+      <ul>
+        <li><a href="#" onclick="loadView('promissory')" id="promissoryLink">వడ్డీ లేఖ</a></li>
+        <li><a href="#" onclick="loadView('agri-loan')" id="agriLoanLink">వ్యవసాయ రుణ సహాయకుడు</a></li>
+      </ul>
+    </div>
+    <div class="main-content" id="mainContent">
+      <!-- Content loaded dynamically -->
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+# Agri Loan & Promissory Note Helper
+
+A bilingual (English/Telugu) web application designed to assist with agricultural loan calculations and promissory note generation.
+
+## Overview
+
+This application offers two primary tools:
+
+1. **Agricultural Loan Calculator** - Helps farmers calculate loan amounts, expected income, and profit based on crop type, land area, and other parameters.
+2. **Promissory Note Calculator** - Calculates interest amounts based on principal, duration, and interest rate.
+
+Both tools are fully bilingual, supporting both Telugu and English languages with an easy toggle switch.
+
+## Features
+
+- **Bilingual Support**: Seamlessly switch between Telugu and English
+- **Responsive Design**: Works on desktop and mobile devices
+- **Agricultural Loan Calculator**:
+  - Crop selection (Paddy, Cotton, Chilli)
+  - Land area calculation
+  - Cost per acre estimation
+  - Yield and market price inputs
+  - Loan duration and interest rate parameters
+  - Complete breakdown of costs, income, profit and repayable amounts
+- **Promissory Note Calculator**:
+  - Principal amount input
+  - Interest rate calculation
+  - Date range selection
+  - Detailed breakdown of interest by years, months, and days
+  - Total repayable amount calculation
+
+## File Structure
+
+```
+PROMISSORY-NOTE/
+├── components/
+│   ├── agri-loan.html      # Agricultural loan calculator component
+│   └── promissory.html     # Promissory note calculator component
+├── css/
+│   └── style.css           # Application styling
+├── js/
+│   ├── agri-loan.js        # Agricultural loan calculator logic
+│   ├── main.js             # Main application logic and navigation
+│   └── promissory.js       # Promissory note calculator logic
+└── index.html              # Main application entry point
+```
+
+## Setup Instructions
+
+1. Clone the repository or download the files
+2. No server or installation required - simply open `index.html` in a web browser
+3. The application runs entirely in the browser with no external dependencies
+
+## Usage
+
+### Language Selection
+- Use the toggle switch at the top of the page to switch between Telugu and English
+- Telugu is the default language
+
+### Agricultural Loan Calculator
+1. Navigate to "వ్యవసాయ రుణ సహాయకుడు / Agri Loan Helper" in the sidebar
+2. Fill in the following details:
+   - Select crop type
+   - Enter land area in acres
+   - Input cost per acre
+   - Specify expected yield in quintals
+   - Provide market price per quintal
+   - Enter loan duration in months
+   - Set interest rate (default: 10%)
+3. Click "లెక్కించండి / Calculate" to see results
+
+### Promissory Note Calculator
+1. Navigate to "వడ్డీ లేఖ / Promissory Note" in the sidebar
+2. Fill in the following details:
+   - Principal amount
+   - Monthly interest rate (default: 1.5%)
+   - Start date
+   - End date
+3. Click "లెక్కించండి / Calculate" to view the breakdown of interest and total repayable amount
+
+## Customization
+
+### Adding More Crops
+To add additional crop types in the Agricultural Loan Calculator:
+1. Open `components/agri-loan.html`
+2. Add new options to the select element with id "crop"
+
+### Modifying Default Values
+- Default interest rate for promissory notes (1.5% monthly) can be changed in `components/promissory.html`
+- Default interest rate for agricultural loans (10% annually) can be modified in `components/agri-loan.html`
+
+## Browser Compatibility
+
+- Chrome (recommended)
+- Firefox
+- Safari
+- Edge
+
+## Contributing
+
+Contributions to improve the application are welcome. Please feel free to submit pull requests or open issues to suggest enhancements or report bugs.
+
+## License
+
+This project is available for free use and modification.

@@ -3,6 +3,12 @@ let isTeluguActive = true;
 
 // Load view with dynamic component
 function loadView(view) {
+  // Hide the hero section when loading a specific view
+  const heroSection = document.getElementById('heroSection');
+  if (heroSection) {
+    heroSection.style.display = 'none';
+  }
+
   fetch(`components/${view}.html`)
     .then(res => res.text())
     .then(html => {

@@ -1,0 +1,24 @@
+<div class="container">
+    <h1 id="pageTitle">వడ్డీ లేఖ <span class="english">/ Promissory Note</span></h1>
+    <div class="form">
+      <label id="labelPrincipal">మూలధన మొత్తం (₹):</label>
+      <input type="number" id="principal" />
+      
+      <label id="labelRate">వడ్డీ శాతం (% నెలకు):</label>
+      <input type="number" id="rate" value="1.5" />
+      
+      <label id="labelStart">ప్రారంభ తేదీ:</label>
+      <input type="date" id="startDate" />
+      
+      <label id="labelEnd">ముగింపు తేదీ:</label>
+      <input type="date" id="endDate" />
+      
+      <label>
+        <input type="checkbox" id="langToggle" onchange="toggleLanguage()" checked />
+        <span id="toggleText">ఆంగ్లంలో చూపించు</span>
+      </label>
+      
+      <button id="calcBtn" onclick="calculate()">లెక్కించండి</button>
+    </div>
+    <div class="output" id="output"></div>
+  </div>
